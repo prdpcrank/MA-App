@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CircleImageView50" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircleImageView10" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="roundedCorners_2dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">2dp</item>
+    </style>
+
+    <style name="roundedCorners_4dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+
+
+</resources>

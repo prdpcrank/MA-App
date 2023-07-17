@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/grid_image_layout_0">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvName"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="#bbbbbb"
+        android:outlineSpotShadowColor="#bbbbbb"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2.5dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/gridImageIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/roundedCorners_4dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="24sp"
+        android:paddingStart="10dp"
+        android:lineSpacingExtra="8sp"
+        android:maxLines="1"
+        android:textColor="#1a181e"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cvCard"
+        app:layout_constraintTop_toTopOf="@+id/cvCard"/>
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineHeight="24sp"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:lineSpacingExtra="8sp"
+        android:paddingStart="10dp"
+        android:textColor="#1a181e"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/cvCard"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+         
